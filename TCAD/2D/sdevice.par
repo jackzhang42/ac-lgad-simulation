@@ -1,0 +1,39 @@
+Material = "Silicon" {
+	#include "Silicon.par"
+OkutoCrowell * Impact Ionization:
+{ * G_impact = alpha_n n v_drift_n  +  alpha_p p v_drift_p
+  * with alpha = a (1+c(T-300)) E^gamma exp[-(Ecrit (1+d(T-300)) /E )^delta]
+  * and Ecrit = b (default),
+  * or  Ecrit = (beta Eg)/(q lambda) (with BandgapDependence)
+	a	= 0.426 ,	0.243	# [1/V]
+	b	= 4.8100e+05 ,	6.5300e+05	# [V/cm]
+	c	= 4.5750e-04 ,	8.0250e-04	# [1/K]
+	* c	= 3.0500e-04 ,	5.3500e-04	# [1/K]
+	* d	= 6.8600e-04 ,	5.6700e-04	# [1/K]
+	d	= 1.0000e-03 ,	8.4000e-04	# [1/K]
+	gamma	= 1 ,	1	# [1]
+	delta	= 2 ,	2	# [1]
+	beta	= 0.265283 ,	0.261395	# [1]
+	lambda	= 6.2000e-07 ,	4.5000e-07	# [cm]
+}
+OkutoCrowell_aniso * Impact Ionization:
+{ * G_impact = alpha_n n v_drift_n  +  alpha_p p v_drift_p
+  * with alpha = a (1+c(T-300)) E^gamma exp[-(Ecrit (1+d(T-300)) /E )^delta]
+  * and Ecrit = b (default),
+  * or  Ecrit = (beta Eg)/(q lambda) (with BandgapDependence)
+	a	= 0.426 ,	0.243	# [1/V]
+	b	= 4.8100e+05 ,	6.5300e+05	# [V/cm]
+	* c	= 3.0500e-04 ,	5.3500e-04	# [1/K]
+	c	= 4.5750e-04 ,	8.0250e-04	# [1/K]
+	* d	= 6.8600e-04 ,	5.6700e-04	# [1/K]
+	d	= 1.0000e-03 ,	8.4000e-04	# [1/K]
+	gamma	= 1 ,	1	# [1]
+	delta	= 2 ,	2	# [1]
+	beta	= 0.265283 ,	0.261395	# [1]
+	lambda	= 6.2000e-07 ,	4.5000e-07	# [cm]
+}
+
+
+
+}
+
