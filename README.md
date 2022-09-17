@@ -14,7 +14,7 @@ and they will be explained below in the desciption of Tool flow.
 
 The workflow is:
 
-sprocess $\Longrightarrow$ snmesh $\Longrightarrow$ sdevice $\Longrightarrow$ inspect(inspect\_trans) $\Longrightarrow$ inspect(inspect\_IV)
+sprocess --> snmesh --> sdevice --> inspect(inspect\_trans) --> inspect(inspect\_IV)
 
 The name in () is the tool's label name and should match their command file name.
 
@@ -29,7 +29,7 @@ Here,
 
 The workflow is:
 
-sprocess $\Longrightarrow$ sde(sde\_for\_idealize) $\Longrightarrow$ sde $\Longrightarrow$ snmesh $\Longrightarrow$ snmesh(snmesh1) $\Longrightarrow$ sdevice
+sprocess --> sde(sde\_for\_idealize) --> sde --> snmesh --> snmesh(snmesh1) --> sdevice
 
 The name in () is the tool's label name and should match their command file name.
 
