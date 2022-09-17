@@ -1,6 +1,24 @@
 # AC-LGAD simulation
 
-a place for storing AC-LGAD simulation codes
+a place for storing AC-LGAD simulation codes.
+Please note that the directory structure does **NOT** necessarily reflect the real case.
+
+## TCAD codes
+
+Most of the codes here correspond to command files(.cmd) of TCAD tools used in the TCAD project.
+For example, *sprocess_fps.cmd* is the command file for TCAD tool sprocess.
+Some other .cmd file has a user-revised name different from TCAD default one, such as *inspect_IV_ins.cmd*, 
+and they will be explained below in the desciption of Tool flow.
+
+### 2D simulation
+
+### 3D simulation
+
+## Garfield++ codes
+
+### run in local
+
+### submit jobs using condor
 
 ## Getting started
 
